@@ -6,17 +6,18 @@
  */
 int main(void)
 {
-	int n, m;
+	int num1, num2;
 
-	for (n = 0; n <= 8; n++)
+	for (num1 = 0; num1 < 9; num1++)
 	{
-		for (m = n + 1; m <= 9; m++)
+		for (num2 = num1 + 1; num2 <= 9; num2++)
 		{
-			putchar(n + '0');
-			putchar(m + '0');
+			putchar((num1 % 10) + '0');
+			putchar((num2 % 10) + '0');
 
-			if (n != 8 || m != 9)
+			if (num1 == 8 || num2 == 9)
 			{
+				continue;
 				putchar(',');
 				putchar(' ');
 			}
