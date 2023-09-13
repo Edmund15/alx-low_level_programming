@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _putchar - Writes a character to stdout
+ * main - Entry point for the program
  *
+ *This function prints the characters '_p-u-t-c-h-a-r' followed by a newline.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
