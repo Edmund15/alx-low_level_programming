@@ -10,17 +10,13 @@
  */
 int main(void)
 {
-	long long int fib1 = 1;
-	long long int fib2 = 2;
-	long long int nextFib;
+	int i = 0;
+	long long int j = 1, k = 2;
 
 
-	printf("%lld, %lld, ", fib1, fib2);
-
-	for (int i = 2; i < 50; i++)
+	while (i < 50)
 	{
-		nextFib = fib1 + fib2;
-		printf("%lld", nextFib);
+		printf("%lld", j);
 
 		if (i < 49)
 		{
@@ -30,9 +26,10 @@ int main(void)
 		{
 			printf("\n");
 		}
-		fib1 = fib2;
-		fib2 = nextFib;
+		long long int nextFib = j + k;
+		k += j;
+		j = nextFib;
+		i++;
 	}
 	return (0);
 }
-
