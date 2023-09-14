@@ -11,12 +11,12 @@
 int main(void)
 {
 	int i = 0;
-	long long int j = 1, k = 2;
+	long int j = 1, k = 2;
 
 
 	while (i < 50)
 	{
-		printf("%lld", j);
+		printf("%ld", j);
 
 		if (i < 49)
 		{
@@ -26,7 +26,7 @@ int main(void)
 		{
 			printf("\n");
 		}
-		long long int nextFib = j + k;
+		long int nextFib = j + k;
 		k += j;
 		j = nextFib;
 		i++;
