@@ -12,7 +12,7 @@ int main(void)
 	int i;
 
 
-	for (in i = 3; i < limit; i++)
+	for (int i = 3; i < limit; i++)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
