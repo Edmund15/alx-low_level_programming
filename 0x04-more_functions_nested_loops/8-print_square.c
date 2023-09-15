@@ -1,8 +1,8 @@
 #include "main.h"
-
 /**
  * print_square - function that prints a square followed by a new line.
  * @size: The size of the square
+ * Return: empty
  */
 void print_square(int size)
 {
@@ -13,6 +13,7 @@ void print_square(int size)
 	else
 	{
 		int x, y;
+
 		for (x = 0; x < size; x++)
 		{
 			for (y = 0; y < size; y++)
@@ -23,4 +24,3 @@ void print_square(int size)
 		}
 	}
 }
-
