@@ -26,10 +26,13 @@ int main(void)
 			number /= x;
 		}
 	}
+
 	if (number > 1)
 	{
 		maxf = number;
 	}
+
 	printf("%ld\n", maxf);
 	return (0);
 }
+
