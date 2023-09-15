@@ -31,7 +31,6 @@ int main(void)
 	{
 		maxf = number;
 	}
-
 	printf("%ld\n", maxf);
 	return (0);
 }
