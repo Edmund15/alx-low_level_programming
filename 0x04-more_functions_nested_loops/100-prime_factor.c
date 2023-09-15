@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+
 /**
   *main - The prime factors of 1231952
   *Return: always 0
@@ -14,7 +15,8 @@ int main(void)
 	{
 		if (number % x == 0)
 		{
-			maxf = number / x;
+			maxf = x;
+			number /= x;
 		}
 	}
 	printf("%ld\n", maxf);
