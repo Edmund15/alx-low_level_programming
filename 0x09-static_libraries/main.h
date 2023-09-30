@@ -1,11 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Include necessary header files */
-#include <stdio.h>  // Example: Standard I/O functions
-
-/* Define macros or constants */
-#define MAX_ARRAY_SIZE 100
+#include <stdio.h>
 
 int _putchar(char c);
 int _islower(int c);
