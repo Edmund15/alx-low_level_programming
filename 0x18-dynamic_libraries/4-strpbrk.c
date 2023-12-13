@@ -1,15 +1,24 @@
 #include "main.h"
 
-
+/**
+  *_strpbrk - the function name
+  *@s: the first parameter
+  *@accept: the second parameter
+  *Return: always 0
+  */
 char *_strpbrk(char *s, char *accept)
 {
 	while (*s != '\0')
 	{
-		if (_strchr(accept, *s) != NULL)
+		const char *a = accept;
+
+		while (*a != '\0')
 		{
-			return (s);
+			if (*s == *a)
+				return (s);
+			a++;
 		}
 		s++;
 	}
-    return (NULL);
+	return (NULL);
 }
